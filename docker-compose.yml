@@ -1,0 +1,14 @@
+version: "3"
+services:
+  app:
+    image: registry.cn-beijing.aliyuncs.com/codeforfun/discuz:3.4
+    build: .
+    ports:
+      - "80:80"
+  mysql:
+    image: mysql:5
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
