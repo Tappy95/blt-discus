@@ -1,6 +1,13 @@
-FROM richarvey/nginx-php-fpm
-COPY Discuz_X3.4_SC_UTF8.zip /Discuz_X3.4_SC_UTF8.zip
-#RUN curl "http://download.comsenz.com/DiscuzX/3.3/Discuz_X3.3_SC_UTF8.zip" -o /Discuz_X3.3_SC_UTF8.zip
-COPY install.sh /install.sh
-VOLUME /var/www/html
-CMD /install.sh && /start.sh
+FROM php:7.2-apache
+WORKDIR /
+# 改为阿里源
+RUN rm -rf /etc/apt/sources.list
+COPY sources.list /etc/apt/sources.list
+RUN apt-get update
+RUN apt-get install -y --allow-unauthenticated git
+RUN git clone https://gitee.com/ComsenzDiscuz/DiscuzX.git
+RUN rm -rf /var/www/html
+RUN mv /DiscuzX/upload /var/www/html
+RUN rm -rf /DiscuzX
+RUN chmod 777 -R /var/www/html
+RUN docker-php-ext-install mysqli
