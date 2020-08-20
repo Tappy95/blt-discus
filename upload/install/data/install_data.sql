@@ -161,7 +161,7 @@ INSERT INTO pre_common_nav VALUES ('', '0', '手机版', '', 'forum.php?mobile=y
 INSERT INTO pre_common_nav VALUES ('', '0', '小黑屋', '', 'forum.php?mod=misc&action=showdarkroom', 'darkroom', 0, 0, 1, 3, 0, 0, 0, 0, '', '', '', 1, '');
 
 INSERT INTO pre_common_nav VALUES ('', '0', '日志', '', 'home.php?mod=space&do=blog', 'blog', 0, 0, -1, 2, 0, 0, 0, 0, '{STATICURL}image/feed/blog.gif', '发布', 'home.php?mod=spacecp&ac=blog', 2, '');
-INSERT INTO pre_common_nav VALUES ('', '0', '相册', '', 'home.php?mod=space&do=album', 'album', 0, 0, -1, 3, 0, 0, 0, 0, '{STATICURL}image/feed/album.gif', '上传', 'home.php?mod=spacecp&ac=discuz', 2, '');
+INSERT INTO pre_common_nav VALUES ('', '0', '相册', '', 'home.php?mod=space&do=album', 'album', 0, 0, -1, 3, 0, 0, 0, 0, '{STATICURL}image/feed/album.gif', '上传', 'home.php?mod=spacecp&ac=upload', 2, '');
 INSERT INTO pre_common_nav VALUES ('', '0', '分享', '', 'home.php?mod=space&do=share', 'share', 0, 0, -1, 4, 0, 0, 0, 0, '{STATICURL}image/feed/share.gif', '添加', 'home.php?mod=spacecp&ac=share', 2, '');
 INSERT INTO pre_common_nav VALUES ('', '0', '记录', '', 'home.php?mod=space&do=doing', 'doing', 0, 0, -1, 5, 0, 0, 0, 0, '{STATICURL}image/feed/doing.gif', '', '', 2, '');
 INSERT INTO pre_common_nav VALUES ('', '0', '广播', '', 'home.php?mod=follow', 'follow', 0, 0, -1, 6, 0, 0, 0, 0, '{STATICURL}image/feed/follow.gif', '', '', 2, '');
@@ -404,7 +404,7 @@ INSERT INTO pre_common_setting VALUES ('postmodperiods','');
 INSERT INTO pre_common_setting VALUES ('postno','#');
 INSERT INTO pre_common_setting VALUES ('postnocustom','');
 INSERT INTO pre_common_setting VALUES ('postperpage','10');
-INSERT INTO pre_common_setting VALUES ('privacy','a:2:{s:4:\"view\";a:8:{s:5:\"index\";i:0;s:6:\"friend\";i:0;s:4:\"wall\";i:0;s:4:\"home\";i:0;s:5:\"doing\";i:0;s:4:\"blog\";i:0;s:5:\"album\";i:0;s:5:\"share\";i:0;}s:4:\"feed\";a:5:{s:5:\"doing\";i:1;s:4:\"blog\";i:1;s:6:\"discuz\";i:1;s:4:\"poll\";i:1;s:9:\"newthread\";i:1;}}');
+INSERT INTO pre_common_setting VALUES ('privacy','a:2:{s:4:\"view\";a:8:{s:5:\"index\";i:0;s:6:\"friend\";i:0;s:4:\"wall\";i:0;s:4:\"home\";i:0;s:5:\"doing\";i:0;s:4:\"blog\";i:0;s:5:\"album\";i:0;s:5:\"share\";i:0;}s:4:\"feed\";a:5:{s:5:\"doing\";i:1;s:4:\"blog\";i:1;s:6:\"upload\";i:1;s:4:\"poll\";i:1;s:9:\"newthread\";i:1;}}');
 INSERT INTO pre_common_setting VALUES ('pvfrequence','60');
 INSERT INTO pre_common_setting VALUES ('pwdsafety','0');
 INSERT INTO pre_common_setting VALUES ('pwlength','6');

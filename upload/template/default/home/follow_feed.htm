@@ -99,7 +99,7 @@
 										<textarea rows="5" cols="80" name="message" id="fastpostmessage" onKeyDown="seditor_ctlent(event, '$(\'fastpostsubmit\').click()');" tabindex="12" class="pt xs2"></textarea>
 									</div>
 									<div id="flw_bar" class="bar">
-										<!--{eval $seditor = array('fastpost', array('smilies', 'at'), 0, '<span id="spanButtonPlaceholder">{lang discuz}</span>');}-->
+										<!--{eval $seditor = array('fastpost', array('smilies', 'at'), 0, '<span id="spanButtonPlaceholder">{lang upload}</span>');}-->
 										<!--{subtemplate common/seditor}-->
 									</div>
 								</div>
@@ -112,7 +112,7 @@
 							<div class="upfl{if empty($_GET[from]) && $_G[setting][fastsmilies]} hasfsl{/if}">
 								<div id="attachlist" class="fieldset flash cl"><span style="font-size:0"></span></div>
 								<!--{if empty($_G['setting']['pluginhooks']['follow_upload_extend'])}-->
-									<!--{subtemplate common/discuz}-->
+									<!--{subtemplate common/upload}-->
 									<script type="text/javascript">
 										var upload = new SWFUpload({
 											// Backend Settings

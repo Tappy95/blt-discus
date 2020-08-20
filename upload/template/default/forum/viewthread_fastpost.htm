@@ -42,7 +42,7 @@ var disablepostctrl = parseInt('{$_G['group']['disablepostctrl']}');
 						<!--{hook/viewthread_fastpost_func_extra}-->
 						<a href="forum.php?mod=post&action=reply&fid=$_G[fid]&tid=$_G[tid]{if $_GET[from]}&from=$_GET[from]{/if}" onclick="return switchAdvanceMode(this.href)">{lang post_advancemode}</a>
 					</span>
-					<!--{eval $seditor = array('fastpost', array('at', 'bold', 'color', 'img', 'link', 'quote', 'code', 'smilies'), !$allowfastpost ? 1 : 0, $allowpostattach && $_GET['from'] != 'preview' && $allowfastpost ? '<span class="pipe z">|</span><span id="spanButtonPlaceholder">'.lang('template', 'discuz').'</span>' : '');}-->
+					<!--{eval $seditor = array('fastpost', array('at', 'bold', 'color', 'img', 'link', 'quote', 'code', 'smilies'), !$allowfastpost ? 1 : 0, $allowpostattach && $_GET['from'] != 'preview' && $allowfastpost ? '<span class="pipe z">|</span><span id="spanButtonPlaceholder">'.lang('template', 'upload').'</span>' : '');}-->
 					<!--{hook/viewthread_fastpost_ctrl_extra}-->
 					<!--{subtemplate common/seditor}-->
 				</div>
@@ -97,7 +97,7 @@ var disablepostctrl = parseInt('{$_G['group']['disablepostctrl']}');
 			</table>
 			<div class="fieldset flash" id="attachlist"></div>
 			<!--{if empty($_G['setting']['pluginhooks']['viewthread_fastpost_upload_extend'])}-->
-				<!--{subtemplate common/discuz}-->
+				<!--{subtemplate common/upload}-->
 				<script type="text/javascript">
 					var upload = new SWFUpload({
 						upload_url: "{$_G[siteurl]}misc.php?mod=swfupload&action=swfupload&operation=upload&fid=$_G[fid]",

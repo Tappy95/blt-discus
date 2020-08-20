@@ -532,7 +532,7 @@ function uploadWindowload() {
 function uploadWindow(recall, type) {
 	var type = isUndefined(type) ? 'image' : type;
 	UPLOADWINRECALL = recall;
-	showWindow('upload', 'forum.php?mod=misc&action=discuz&fid=' + fid + '&type=' + type, 'get', 0, {'zindex':601});
+	showWindow('upload', 'forum.php?mod=misc&action=upload&fid=' + fid + '&type=' + type, 'get', 0, {'zindex':601});
 }
 
 function updatetradeattach(aid, url, attachurl) {

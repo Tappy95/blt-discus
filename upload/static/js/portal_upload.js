@@ -10,7 +10,7 @@ var nowid = 0;
 var extensions = '';
 
 function addAttach() {
-	var newnode = $('discuz').cloneNode(true);
+	var newnode = $('upload').cloneNode(true);
 	var id = nowid;
 	var tags;
 

@@ -31,7 +31,7 @@ function downRemoteFile() {
 	edit_save();
 	var formObj = $("articleform");
 	var oldAction = formObj.action;
-	formObj.action = "portal.php?mod=portalcp&ac=discuz&op=downremotefile";
+	formObj.action = "portal.php?mod=portalcp&ac=upload&op=downremotefile";
 	formObj.onSubmit = "";
 	formObj.target = "uploadframe";
 	formObj.submit();
