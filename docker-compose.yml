@@ -1,7 +1,0 @@
-version: "3"
-services:
-  app:
-    image: registry.cn-beijing.aliyuncs.com/codeforfun/discuz:3.4
-    build: .
-    ports:
-      - "80:80"
